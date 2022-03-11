@@ -1,8 +1,15 @@
-@import "core/variables";
+/* CORE */
 @import "core/reset";
-/* 
-@import 'components/links';
+@import "core/variables";
+@import "core/global";
 
-@import 'layout/header';
-@import 'layout/footer';
- */
+/* COMPONENTS */
+@import "components/text";
+@import "components/buttons";
+@import "components/textTransform";
+
+/* @import 'components/links'; */
+
+/* LAYOUT */
+@import "layout/header";
+@import "layout/footer";
