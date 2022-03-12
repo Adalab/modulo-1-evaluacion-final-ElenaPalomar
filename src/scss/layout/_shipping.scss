@@ -1,0 +1,22 @@
+.shipping {
+  background-color: $orangeBackground;
+
+  padding: 45px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding-bottom: 10px;
+
+    &__title {
+      @include text($whiteText, 1.5rem, 600);
+    }
+
+    &__text {
+      @include text($whiteText, 0.875rem, 400);
+    }
+  }
+}

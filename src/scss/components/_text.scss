@@ -3,4 +3,14 @@
 
   font-size: $fontSize;
   font-weight: $fontWeight;
+
+  text-align: center;
+}
+
+.title {
+  @include text($greenDominant, 2.25rem, 600);
+}
+
+.subtitle {
+  @include text($greenDominant, 1.5rem, 600);
 }

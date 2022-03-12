@@ -1,0 +1,62 @@
+.articles {
+  background-color: $greyBackground;
+
+  padding-bottom: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+
+  align-items: center;
+
+  .subtitle {
+    grid-column: span 3;
+
+    margin: 45px 45px 0;
+  }
+
+  .article {
+    text-align: center;
+
+    &__image {
+      width: 90px;
+
+      margin: 30px 45px;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      &__title {
+        @include text($greenDominant, 1.25rem, 600);
+      }
+
+      &__text {
+        @include text($greenDominant, 1rem, 400);
+      }
+    }
+  }
+
+  .article:nth-of-type(n) {
+    max-width: 208px;
+
+    margin: 0 auto;
+  }
+
+  .article:first-of-type {
+    grid-column: span 3;
+    grid-row: 2/3;
+  }
+
+  .article:nth-of-type(2) {
+    grid-column: span 3;
+    grid-row: 3/4;
+  }
+
+  .article:last-of-type {
+    grid-column: span 3;
+    grid-row: 4/5;
+  }
+}

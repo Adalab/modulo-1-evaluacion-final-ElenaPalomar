@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+
+  margin-top: 19px;
+
+  position: absolute;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__nav {
+    position: fixed; /* 
+    top: 55px;
+    left: 33px; */
+
+    &__menu {
+      width: 24px;
+      height: 24px;
+
+      text-align: center;
+
+      &__icon {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: $greenDominant;
+      }
+    }
+
+    &__list {
+      display: none;
+    }
+  }
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+}

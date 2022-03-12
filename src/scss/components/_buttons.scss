@@ -1,9 +1,26 @@
 @mixin button() {
   padding: 12px 24px;
 
-  font-size: 16px;
+  font-weight: 600;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.buttonGreen {
+  background-color: $greenDominant;
+  color: $whiteText;
+  @include button();
+}
+
+.buttonLink {
+  color: $whiteText;
+  text-decoration: underline;
+  @include button();
+}
+
+.buttonMenu {
+  color: $greenDominant;
+  @include button();
 }

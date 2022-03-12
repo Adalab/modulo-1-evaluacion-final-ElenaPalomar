@@ -1,0 +1,37 @@
+.products {
+  display: flex;
+  flex-direction: column;
+
+  &__buyNow {
+    background-color: $greyBackground;
+
+    padding: 90px 27px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+      @include text($greenDominant, 0.875rem, 400);
+
+      padding: 10px 0 30px;
+    }
+  }
+
+  &__image {
+    background-image: url(../images/creando-espacios.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 384px;
+  }
+  /* &__image {
+    height: 474px;
+
+    margin: 0 auto;
+
+    display: block;
+    object-fit: cover;
+  } */
+}
