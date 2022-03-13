@@ -12,17 +12,10 @@
     position: fixed;
     left: 10%;
 
-    &__menu {
-      width: 24px;
-      height: 24px;
-
-      text-align: center;
-
-      &__icon {
-        font-size: 1.125rem;
-        line-height: 1.5rem;
-        color: $greenDominant;
-      }
+    &__icon {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $greenDominant;
     }
 
     &__list {
