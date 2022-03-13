@@ -1,22 +1,55 @@
 .footer {
   background-color: $greenDominant;
 
-  padding: 56px 0;
-
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-
-  gap: 20px;
-
   .nav {
-    width: 208px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0;
 
-    margin: 0 59px 0 auto;
+    &__links {
+      width: 208px;
 
-    &__title {
-      @include text($greyText, 1.25rem, 600);
-      text-align: left;
+      padding: 56px 0 56px;
+
+      margin-left: 146px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+
+      &__title {
+        @include text($greyText, 1.25rem, 600);
+        text-align: left;
+
+        padding-bottom: 10px;
+      }
+
+      &__list {
+        line-height: 1.3rem;
+
+        padding-bottom: 12px;
+      }
+
+      &__listSocial {
+        display: flex;
+        gap: 8px;
+      }
+    }
+
+    &__backTop {
+      color: $whiteText;
+
+      padding: 16px 28px 16px 7px;
+
+      display: flex;
+      justify-content: flex-end;
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

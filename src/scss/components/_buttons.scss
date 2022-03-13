@@ -24,3 +24,13 @@
   color: $greenDominant;
   @include button();
 }
+
+.buttonSocial {
+  width: 25px;
+  height: 26px;
+
+  color: $whiteText;
+  @include text($whiteText, 1.25rem, 600);
+
+  padding: 12px 11px 0 0;
+}
