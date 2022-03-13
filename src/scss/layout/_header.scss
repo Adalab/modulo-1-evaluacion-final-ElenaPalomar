@@ -6,13 +6,11 @@
   position: absolute;
 
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 
   &__nav {
-    position: fixed; /* 
-    top: 55px;
-    left: 33px; */
+    position: fixed;
+    left: 10%;
 
     &__menu {
       width: 24px;

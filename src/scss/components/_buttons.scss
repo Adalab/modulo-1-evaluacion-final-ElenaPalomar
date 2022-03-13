@@ -30,7 +30,7 @@
   height: 26px;
 
   color: $whiteText;
-  @include text($whiteText, 1.25rem, 600);
+  @include text($whiteText, 1.3rem, 600);
 
-  padding: 12px 11px 0 0;
+  padding: 12px 16px 0 0;
 }

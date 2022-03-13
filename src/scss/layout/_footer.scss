@@ -22,7 +22,7 @@
         @include text($greyText, 1.25rem, 600);
         text-align: left;
 
-        padding-bottom: 10px;
+        padding-bottom: 8px;
       }
 
       &__list {
@@ -33,7 +33,6 @@
 
       &__listSocial {
         display: flex;
-        gap: 8px;
       }
     }
 

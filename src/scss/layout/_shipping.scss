@@ -7,16 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 
-  &__container {
-    padding-bottom: 10px;
+  &__title {
+    @include text($whiteText, 1.5rem, 600);
+    padding-bottom: 8px;
+  }
 
-    &__title {
-      @include text($whiteText, 1.5rem, 600);
-    }
-
-    &__text {
-      @include text($whiteText, 0.875rem, 400);
-    }
+  &__text {
+    @include text($whiteText, 0.875rem, 400);
   }
 }
