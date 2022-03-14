@@ -5,18 +5,27 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 0;
+
+    @media all and (min-width: 768px) {
+      padding: 71px 0 74px;
+
+      justify-content: center;
+    }
 
     &__links {
-      width: 208px;
-
       padding: 56px 0 56px;
-
-      margin-left: 146px;
+      margin: 0 0 0 auto;
 
       display: flex;
       flex-direction: column;
       gap: 18px;
+
+      @media all and (min-width: 768px) {
+        padding: 0;
+        margin: 0 0 0 auto;
+
+        flex-direction: row;
+      }
 
       &__title {
         @include text($greyText, 1.25rem, 600);
@@ -26,9 +35,11 @@
       }
 
       &__list {
-        line-height: 1.3rem;
+        width: 208px;
 
         padding-bottom: 12px;
+
+        line-height: 1.3rem;
       }
 
       &__listSocial {
@@ -43,6 +54,10 @@
 
       display: flex;
       justify-content: flex-end;
+
+      @media all and (min-width: 768px) {
+        padding: 57px 57px 0;
+      }
 
       &__icon {
         display: flex;

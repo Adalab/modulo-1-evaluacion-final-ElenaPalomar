@@ -1,18 +1,23 @@
 .articles {
   background-color: $greyBackground;
 
-  padding-bottom: 30px;
+  padding: 45px 45px 10px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 208px 1fr;
   grid-template-rows: auto repeat(3, 1fr);
-
+  row-gap: 20px;
   align-items: center;
+
+  @media all and (min-width: 768px) {
+    padding: 63px 90px 80px;
+
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 42px;
+  }
 
   .subtitle {
     grid-column: span 3;
-
-    margin: 45px 45px 0;
   }
 
   .article {
@@ -21,42 +26,97 @@
     &__image {
       width: 90px;
 
-      margin: 30px 45px;
+      margin: auto;
     }
 
     .container {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+      gap: 7px;
+    }
 
-      &__title {
-        @include text($greenDominant, 1.25rem, 600);
-      }
+    &__title {
+      @include text($greenDominant, 1.25rem, 600);
+    }
 
-      &__text {
-        @include text($greenDominant, 1rem, 400);
-      }
+    &__text {
+      @include text($greenDominant, 1rem, 400);
     }
   }
 
   .article:nth-of-type(n) {
-    max-width: 208px;
+    height: 100%;
 
     margin: 0 auto;
   }
 
   .article:first-of-type {
-    grid-column: span 3;
+    grid-column: 2/3;
     grid-row: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+    &__image {
+      grid-row: 1/2;
+    }
+
+    .container {
+      grid-row: 2/3;
+    }
+
+    @media all and (min-width: 768px) {
+      grid-column: 1/2;
+      grid-row: span 3;
+
+      align-items: flex-start;
+    }
   }
 
   .article:nth-of-type(2) {
-    grid-column: span 3;
+    grid-column: 2/3;
     grid-row: 3/4;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    &__image {
+      grid-row: 1/2;
+    }
+
+    .container {
+      grid-row: 2/3;
+    }
+
+    @media all and (min-width: 768px) {
+      grid-column: 2/3;
+      grid-row: span 3;
+
+      align-items: flex-start;
+    }
   }
 
   .article:last-of-type {
-    grid-column: span 3;
+    grid-column: 2/3;
     grid-row: 4/5;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    &__image {
+      grid-row: 1/2;
+    }
+
+    .container {
+      grid-row: 2/3;
+    }
+
+    @media all and (min-width: 768px) {
+      grid-column: 3/4;
+      grid-row: span 3;
+
+      align-items: flex-start;
+    }
   }
 }

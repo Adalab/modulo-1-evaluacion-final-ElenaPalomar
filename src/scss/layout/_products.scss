@@ -5,25 +5,43 @@
   &__buyNow {
     background-color: $greyBackground;
 
-    padding: 90px 27px;
+    padding: 90px 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    .container {
+      @media all and (min-width: 768px) {
+        width: 430px;
+      }
+
+      .subtitle {
+        @media all and (min-width: 768px) {
+          font-size: 1.875rem;
+        }
+      }
+    }
+
     &__text {
       @include text($greenDominant, 0.875rem, 400);
 
       padding: 10px 0 30px;
+
+      @media all and (min-width: 768px) {
+        padding: 0 20px 20px;
+      }
     }
   }
 
   &__image {
-    background-image: url(../images/creando-espacios.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 200px;
+    min-width: 100%;
+    min-height: 304px;
+    object-fit: cover;
 
-    height: 304px;
+    @media all and (min-width: 768px) {
+      max-height: 474px;
+    }
   }
 }
