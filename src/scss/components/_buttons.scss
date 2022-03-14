@@ -14,6 +14,11 @@
   @include button();
 }
 
+.buttonGreen:active {
+  border: 10px inset $greenDominant;
+  background-color: $orangeBackground;
+}
+
 .buttonLink {
   color: $whiteText;
   text-decoration: underline;
