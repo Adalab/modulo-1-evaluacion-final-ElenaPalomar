@@ -26,6 +26,14 @@
         flex-direction: row;
       }
 
+      @media all and (min-width: 1200px) {
+        margin: 0 auto;
+
+        flex: 1 1 80%;
+        justify-content: flex-end;
+        gap: 15%;
+      }
+
       &__title {
         @include text($greyText, 1.25rem, 600);
         text-align: left;
@@ -56,6 +64,15 @@
 
       @media all and (min-width: 768px) {
         padding: 57px 57px 0;
+      }
+
+      @media all and (min-width: 1200px) {
+        padding: 30px;
+
+        margin: 0 auto;
+
+        flex: 1 1 20%;
+        justify-content: center;
       }
 
       &__icon {

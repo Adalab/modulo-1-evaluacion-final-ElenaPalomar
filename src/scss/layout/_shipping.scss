@@ -9,12 +9,24 @@
   align-items: center;
   gap: 12px;
 
+  @media all and (min-width: 1200px) {
+    padding: 60px;
+  }
+
   &__title {
     @include text($whiteText, 1.5rem, 600);
     padding-bottom: 8px;
+
+    @media all and (min-width: 1200px) {
+      font-size: 2.25rem;
+    }
   }
 
   &__text {
     @include text($whiteText, 0.875rem, 400);
+
+    @media all and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 }

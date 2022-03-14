@@ -1,42 +1,60 @@
 .articles {
   background-color: $greyBackground;
 
-  padding: 45px 45px 10px;
+  padding: 45px 45px 0;
 
   display: grid;
   grid-template-columns: 1fr 208px 1fr;
   grid-template-rows: auto repeat(3, 1fr);
   row-gap: 20px;
+  justify-content: center;
   align-items: center;
 
   @media all and (min-width: 768px) {
-    padding: 63px 90px 80px;
+    padding: 63px 63px 80px;
 
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 42px;
+    column-gap: 5%;
+  }
+
+  @media all and (min-width: 1200px) {
+    padding: 45px 120px 90px;
+    column-gap: 0;
   }
 
   .subtitle {
     grid-column: span 3;
+
+    @media all and (min-width: 1200px) {
+      max-width: 900px;
+      margin: 0 auto;
+
+      padding-bottom: 45px;
+    }
   }
 
   .article {
     text-align: center;
+    max-width: 208px;
 
     &__image {
       width: 90px;
 
       margin: auto;
-    }
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
+      @media all and (min-width: 1200px) {
+        width: 120px;
+      }
     }
 
     &__title {
       @include text($greenDominant, 1.25rem, 600);
+
+      padding-bottom: 4%;
+
+      @media all and (min-width: 1200px) {
+        font-size: 1.5rem;
+      }
     }
 
     &__text {

@@ -16,14 +16,24 @@
     position: fixed;
     left: 10%;
 
+    @media all and (min-width: 1200px) {
+      left: 15%;
+    }
+
     &__icon {
       font-size: 1.125rem;
-      line-height: 1.5rem;
-      color: $greenDominant;
+
+      @media all and (min-width: 1200px) {
+        display: none;
+      }
     }
 
     &__list {
       display: none;
+
+      @media all and (min-width: 1200px) {
+        display: flex;
+      }
     }
   }
 

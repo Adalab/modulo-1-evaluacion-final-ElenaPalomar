@@ -18,4 +18,8 @@
 
 .subtitle {
   @include text($greenDominant, 1.5rem, 600);
+
+  @media all and (min-width: 1200px) {
+    font-size: 2.25rem;
+  }
 }

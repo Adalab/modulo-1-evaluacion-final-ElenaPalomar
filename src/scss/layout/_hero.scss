@@ -33,5 +33,9 @@
       align-items: flex-start;
       gap: 12px;
     }
+
+    @media all and (min-width: 1200px) {
+      margin-left: 15%;
+    }
   }
 }
