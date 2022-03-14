@@ -12,17 +12,25 @@
   background-color: $greenDominant;
   color: $whiteText;
   @include button();
-}
 
-.buttonGreen:active {
-  border: 10px inset $greenDominant;
-  background-color: $orangeBackground;
+  transition: border ease 0.8s, background-color ease 0.8s;
+
+  &:active {
+    border: 10px inset $greenDominant;
+    background-color: $orangeBackground;
+  }
 }
 
 .buttonLink {
   color: $whiteText;
   text-decoration: underline;
   @include button();
+
+  transition: background-color ease 0.8s;
+
+  &:hover {
+    background-color: rgb(255, 123, 0);
+  }
 }
 
 .buttonMenu {
@@ -34,6 +42,14 @@
 
   @media all and (min-width: 1200px) {
     padding: 3px 30px 0 0;
+  }
+
+  transition: background-color ease 0.8s, border-radius ease 0.8s;
+
+  &:hover {
+    padding-left: 30px;
+    background-color: $whiteText;
+    border-radius: 25px;
   }
 }
 
