@@ -3,18 +3,17 @@
 
   .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 
     @media all and (min-width: 768px) {
       padding: 71px 0 74px;
-
-      justify-content: center;
     }
 
     &__links {
-      padding: 56px 0 56px;
-      margin: 0 0 0 auto;
+      padding: 56px 0 56px 10%;
 
       display: flex;
       flex-direction: column;
@@ -23,17 +22,15 @@
       @media all and (min-width: 768px) {
         padding: 0;
 
-        flex-direction: row;
-
-        margin: 0 auto;
-
         flex: 1 1 90%;
-        justify-content: flex-end;
-        gap: 2%;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 12%;
       }
 
       @media all and (min-width: 1200px) {
-        flex: 1 1 80%;
+        flex-basis: 80%;
         gap: 15%;
       }
 
@@ -45,8 +42,6 @@
       }
 
       &__list {
-        width: 208px;
-
         padding-bottom: 12px;
 
         line-height: 1.3rem;
@@ -60,24 +55,23 @@
     &__backTop {
       color: $whiteText;
 
-      padding: 16px 28px 16px 7px;
-
-      display: flex;
-      justify-content: flex-end;
+      position: absolute;
+      bottom: 16px;
+      right: 28px;
 
       @media all and (min-width: 768px) {
-        padding: 57px 57px 0;
-
-        margin: 0 auto;
+        bottom: 89px;
+        right: 57px;
 
         flex: 1 1 10%;
         justify-content: center;
       }
 
       @media all and (min-width: 1200px) {
-        padding: 30px;
+        bottom: 30%;
+        right: 12%;
 
-        flex: 1 1 20%;
+        flex-basis: 20%;
       }
 
       &__icon {
